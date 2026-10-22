@@ -1,9 +1,22 @@
 .home{
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
+    gap: 100vh;
+    /* background: #fff;
+    color: #000; */
 }
 .hero-img{
-    height: 100px;
-    width: 100px;
+    height: 600px;
+    width: 400px;
+    /* background: black; */
+    display: flex;
+    justify-content: center;
+}
+.bio{
+    padding: 10px;
+}
+.bio h1{
+    color: #AA0505;
 }

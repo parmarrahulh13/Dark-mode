@@ -1,16 +1,20 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import Navbar from './Navbar'
 import Home from './Home'
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [background,Setbackground] = useState('white');
+
+  function changebackground(){
+    Setbackground('black');
+  }
 
   return (
     <>
-      <Navbar/>
-      <Home/>
+      <Navbar changeBackground={changeBackground} />
+      <Home background={background} />
     </>
   )
 }
